@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mongo Comments!</title>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="javascripts/comments.js"></script>
+<link href="stylesheets/sketchy.css" rel="stylesheet">
+<link href="stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html">Mongo Comments</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+         
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    
+<div class = "cForm">
+    <form  class="form-inline my-2 my-lg-0" id="commentForm" action="">
+    <label for="name">Name: </label><input class="form-control mr-sm-2" type="text" id="name" placeholder="Name"><br>
+    <label for="comment">comment: </label><input class="form-control mr-sm-2" type="text" id="comment" placeholder="Comment"><br>
+    </form>
+    
+    <button class="btn btn-success" id="postComment">Post Comment</button>
+    <button class="btn btn-secondary my-2 my-sm-0" id="getComments">Get Comments</button>
+    <button class="btn btn-danger" id="deleteComments">Delete All</button>
+    <div id="json"></div>
+    <div id="done"></div>
+    <div id="comments"></div>
+</div>
+</body>
+</html>
